@@ -1,6 +1,7 @@
 #ifndef __btmodule_h__
 #define __btmodule_h__
 
+#define PY_SSIZE_T_CLEAN 1
 #include "Python.h"
 #include <bluetooth/bluetooth.h>
 #include <bluetooth/sdp.h>
