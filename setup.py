@@ -57,6 +57,7 @@ elif sys.platform.startswith('linux'):
     mod1 = Extension('bluetooth._bluetooth',
                      include_dirs = ["./port3",],
                      libraries = ['bluetooth'],
+                     define_macros=[('PY_SSIZE_T_CLEAN', 1)],
                      #extra_compile_args=['-O0'],
                      sources = ['bluez/btmodule.c', 'bluez/btsdp.c'])
     ext_modules.append(mod1)
